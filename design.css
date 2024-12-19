@@ -1,0 +1,435 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FAF0E8; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #702C2B; 
+    line-height: 1.6; 
+}
+.food-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.food-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+}
+
+.food-img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.food-card h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.food-card p {
+    color: #555;
+    margin: 10px 0;
+}
+
+.btn {
+    background-color: #702C2B;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #C56869;
+}
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.cart-table th, .cart-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.cart-table th {
+    background-color: #702C2B;
+    color: white;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+
+.form-container, .profile-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #FFF;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: #702C2B;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button, .btn {
+    background-color: #702C2B;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover, .btn:hover {
+    background-color: #C56869;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+/* Banner Styles */
+.banner {
+    position: relative; /* Positioning for absolute elements inside */
+    width: 100%; /* Full width of the container */
+    height: 300px; /* Set a height for the banner */
+    overflow: hidden; /* Hide overflow content */
+}
+
+.banner-img {
+    width: 100%; /* Full width for the image */
+    height: 100%; /* Full height for the image */
+    object-fit: cover; /* Cover the area without distortion */
+    position: absolute; /* Positioning for the image */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+}
+
+.banner-content {
+    position: absolute; /* Positioning for text overlay */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    z-index: 1; /* Ensure text is above the image */
+}
+
+.banner-content h1 {
+    font-size: 2.5rem; /* Font size for the main heading */
+    margin: 0; /* Remove default margin */
+}
+
+.banner-content p {
+    font-size: 1.2rem; /* Font size for the subheading */
+    margin-top: 10px; /* Space above the paragraph */
+}
+
+/* Container Styles */
+.container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Orders Card Styles */
+.order-card {
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px; 
+    padding: 20px;
+}
+
+.card-body {
+    padding: 20px; 
+}
+
+/* List Group Styles */
+.list-group {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-group-item {
+    padding: 15px; 
+    border-bottom: 1px solid #ddd; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-group-item:last-child {
+    border-bottom: none; 
+}
+
+/* Button Styles */
+.btn {
+    background-color: #702C2B; 
+    color: #F3D7D4; 
+    border: none; 
+    padding: 10px 20px;
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.btn:hover {
+    background-color: #C56869; 
+}
+
+/* Headings Styles */
+h2 {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+h4 {
+    margin-top: 30px; 
+    margin-bottom: 10px; 
+}
+
+/* Margin Top Utility */
+.mt-5 {
+    margin-top: 3rem; 
+}
+
+/* Thank You Page Styles */
+.thank-you-container {
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    text-align: center; 
+}
+
+h1 {
+    font-size: 2.5rem; 
+    margin-bottom: 20px; 
+}
+
+p {
+    font-size: 1.2rem; 
+    margin-bottom: 30px; 
+}
+
+/* Checkout Styles */
+.cart-card {
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px; 
+    padding: 20px;
+}
+
+.cart-table {
+    width: 100%; 
+    border-collapse: collapse;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 80px; 
+    background-color: #702C2B; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); 
+    transition: width 0.3s;
+}
+
+.icon {
+    margin: 35px 0; 
+    text-align: center; 
+    transition: background-color 0.3s, transform 0.2s;
+    color: #F3D7D4; 
+    cursor: pointer; 
+}
+
+.icon img {
+    width: 40px; 
+    height: 40px; 
+    object-fit: cover; 
+}
+
+.icon-label {
+    display: block; 
+    font-size: 0.8em; 
+    margin-top: 5px; 
+    text-align: center; 
+}
+
+.icon:hover {
+    background-color: #C56869; 
+    border-radius: 5px; 
+    transform: scale(1.05); 
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #EBDBCE; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    padding: 50px 100px; 
+    border-radius: 0 0 10px 10px; 
+    z-index: 100; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-weight: bold; 
+    font-size: 1.8rem; 
+    color: #702C2B; 
+    text-transform: uppercase; 
+    margin-top: 10px; 
+}
+
+.navbar-nav {
+    margin-left: auto; 
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 10px; 
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    color: #702C2B; 
+    text-decoration: none; 
+    font-size: 0.9rem; 
+    transition: color 0.3s;
+}
+
+.nav-item:hover {
+    color: #C56869; 
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.map img{
+    display: inline-block;
+    height: 100%;
+    width: 30%;
+    padding-right: 100px;
+}
+.noti img{
+    display: inline-block;
+    height: 100%;
+    width: 35%;
+    padding-right: 100px;
+}
+.profile img{
+    display: inline-block;
+    height: 100%;
+    width: 75%;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 60px; 
+    }
+
+    .icon img {
+        width: 30px; 
+        height: 30px; 
+    }
+
+    .navbar-brand {
+        margin-top: 15px; 
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 50px; 
+    }
+
+    .icon img {
+        width: 25px; 
+        height: 25px; 
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem; 
+        margin-top: 20px; 
+    }
+}
